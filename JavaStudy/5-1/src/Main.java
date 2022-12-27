@@ -41,16 +41,19 @@ public class Main {
 		 {
 			Calendar cal = Calendar.getInstance();
 			
-			int[] arrayDate = new int[3];
-			
+			Integer arrayDate [] = new Integer[3];
+			 
 			arrayDate[0] = cal.get(Calendar.YEAR);
-		    arrayDate[1] = cal.get(Calendar.MONTH + 1 );
+		    arrayDate[1] = cal.get(Calendar.MONTH) + 1;
 		    arrayDate[2] = cal.get(Calendar.DAY_OF_MONTH);
 			
-			List<int[]> list = Arrays.asList(arrayDate);
-			for (int i = 0; i < list.size(); i++) {
+		    
+			List<Integer> list = Arrays.asList(arrayDate);
+			
+			for (int i = 0; i < list.size(); i ++) {
 				System.out.println(list.get(i));
 			}
+			
 		 }
 
 	}
